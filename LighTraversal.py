@@ -62,7 +62,9 @@ def main():
 						for file in files:
 							url = UrlBuilder(params, payload, file)
 							rq = requests.get(url)
-							Verif(rq.text, url)	
+							Verif(rq.text, url)
+		except KeyboardInterrupt:
+			sys.exit(1)
 		except:
 			pass
 			
