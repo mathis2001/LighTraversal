@@ -10,9 +10,9 @@ $ git clone https://github.com/mathis2001/LighTraversal
 ```bash
 $ cat urls.txt | python3 LighTraversal.py [--null-byte]
 
-or with an other tool like waybackurls
+or with an other tool like ParamFirstCheck
 
-$ waybackurls exemple.com | python3 LighTraversal.py [--null-byte]
+$ cat uphf | python3 ParamFirstCheck.py --lfi | python3 LighTraversal.py [--null-byte]
 ```
 
 ## Screenshots:
