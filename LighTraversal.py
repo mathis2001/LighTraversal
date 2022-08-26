@@ -24,6 +24,13 @@ def main():
 	files = ["etc/passwd","etc//passwd","etc///////passwd","etc%5cpasswd","etc%253fpasswd","etc%c0%afpasswd","etc%252fpasswd"]
 	nullbyte = []
 
+	if len(sys.argv) > 2:
+		print(bcolors.FAIL+"[!] "+bcolors.RESET+"too much arguments given.")
+		print(bcolors.OK+"[*] "+bcolors.RESET+"usage: echo 'https://target.com/...' | python3 LighTraversal.py [--null-byte]") 
+		print(bcolors.OK+"[*] "+bcolors.RESET+"usage: cat urls.txt | python3 LighTraversal.py [--null-byte]") 
+		print(bcolors.OK+"[*] "+bcolors.RESET+"usage: other tool | python3 LighTraversal.py [--null-byte]") 
+		sys.exit(1)
+
 	if '--null-byte' in sys.argv:
 		for file in files:
 			file = file+'%00'
