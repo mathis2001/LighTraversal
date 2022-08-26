@@ -12,7 +12,7 @@ $ cat urls.txt | python3 LighTraversal.py [--null-byte]
 
 or with an other tool like ParamFirstCheck
 
-$ cat uphf | python3 ParamFirstCheck.py --lfi | python3 LighTraversal.py [--null-byte]
+$ cat urls.txt | python3 ParamFirstCheck.py --lfi | python3 LighTraversal.py [--null-byte]
 ```
 
 ## Screenshots:
