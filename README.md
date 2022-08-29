@@ -1,5 +1,5 @@
 # LighTraversal
-LighTraversal is an easy path traversal vulnerabitity checker
+LighTraversal is a tool designed to find basic path traversal vulnerabities
 
 ## Install:
 ```bash
